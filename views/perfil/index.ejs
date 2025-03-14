@@ -1,2 +1,11 @@
-<h1>Bruno Mendes</h1>
-<p>27 anos</p>
+<h1>Rota raiz de perfil <%=nomeDoUsuario%></h1>
+
+<ul>
+
+<% perfil.map((perfil) => { %>
+    <li>Perfil do <%= perfil.usuario.nome %> <%= perfil.usuario.idade %></li>
+    <% }) %>
+
+
+</ul>
+</ul>
