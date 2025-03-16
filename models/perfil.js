@@ -1,7 +1,6 @@
 const { Schema } = require ('mongoose');
 
 const Perfil = new Schema({
-    
     usuario: {
         nome:{
             type: String,
@@ -11,7 +10,7 @@ const Perfil = new Schema({
             type: Number,
             required: true,
         }
-    },
-})
+    }
+});
 
 module.exports = Perfil;

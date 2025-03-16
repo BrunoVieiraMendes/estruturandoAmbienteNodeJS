@@ -8,7 +8,7 @@ router.get('/', (_ , res) => {
     Perfil.find({}).then((perfil) => {
         res.render('perfil/index',{
             nomeDoUsuario: "Bruno Mendes",
-            perfil: perfil, 
+            perfil, 
       });
     });
 });
