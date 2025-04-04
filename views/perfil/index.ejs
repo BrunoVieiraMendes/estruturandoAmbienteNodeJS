@@ -2,9 +2,9 @@
 
 <ul>
 
-<% perfil.map((perfil) => { %>
-    <li>Perfil do <%= perfil.usuario.nome %> <%= perfil.usuario.idade %></li>
-    <% }) %>
+    <% perfil.forEach((p) => { %>
+    <li>Perfil do <%= p.perfil.nome %> <%= p.perfil.idade %></li>
+    <% }); %>
 
 
 </ul>

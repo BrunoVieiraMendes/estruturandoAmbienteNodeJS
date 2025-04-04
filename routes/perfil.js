@@ -5,10 +5,10 @@ const { Perfil } = require('../models');
 const router = express.Router();
 
 router.get('/', (_ , res) => {
-    Perfil.find({}).then((perfil) => {
+    Perfil.find({}).then((Perfil) => {
         res.render('perfil/index',{
             nomeDoUsuario: "Bruno Mendes",
-            perfil, 
+            perfil: Perfil,
       });
     });
 });
